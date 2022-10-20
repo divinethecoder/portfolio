@@ -1,7 +1,8 @@
 *{
     user-select: none;
     padding: 0;
-    margin: 0
+    margin: 0;
+    box-sizing: border-box;
 }
 :root{
     --para:'Abyssinica SIL', serif;
@@ -29,6 +30,7 @@ nav{
     display: flex;
     position: sticky;
     top: 0px;
+    margin-bottom: 50px;
 }
 .brand{
     width: 50%;
@@ -72,6 +74,7 @@ nav{
 }
 .nav-content ul li a:hover{
     color: rgb(0, 217, 255);
+    transition-duration: 2s;
 }
 .fa-bars{
     display: none !important;
@@ -89,7 +92,7 @@ nav{
 }
 .space{
     width: auto;
-    height: 100px;
+    height: 130px;
 }
 main{
     width: auto;
@@ -102,12 +105,12 @@ main{
     height: 400px;
     background-color: rgba(255, 255, 255,0.2);
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 0px;
     padding-left: 20px;
+    margin-bottom: 20px;
 }
 .about{
     height: fit-content;
-    text-align: justify;
 }
 .about h1{
     font-size: 3em;
@@ -116,7 +119,7 @@ main{
     font-family:'Merriweather', serif;
 }
 .about p{
-    font-size:1.3em;
+    font-size:1em;
     color: white;
     margin-bottom: 20px;
 }
@@ -147,10 +150,11 @@ main{
 }
 #services p{
     color:white;
-    font-size: 1.4em;
+    font-size: 1em;
+    margin-bottom: 10px;
 }
 #services-box{
-    width: 80%;
+    width: 85%;
     height: fit-content;
     display: flex;
     margin: 15px auto;
@@ -158,7 +162,63 @@ main{
 }
 .box2{
     width: 30%;
-    height: 250px;
+    height: fit-content;
     background-color: rgba(255, 255, 255,0.2);
     border-radius: 5px;
+}
+.box2 h3{
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+.box2 p{
+    font-size: 0.9em !important;
+}
+@media screen and (max-width:991px) {
+    #services-box{
+        flex-wrap: wrap;
+    }
+    .box2{
+        width: 44%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:767px) {
+    #services-box{
+        flex-wrap: wrap;
+    }
+    .box2{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+#projects{
+    width:auto;
+    height: fit-content;
+    text-align: center;
+}
+#projects h3{
+    color: white;
+    font-size: 3em;
+}
+#projects p{
+    color: white;
+    font-size: 1em;
+}
+.project-box{
+    width: 85%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.box3{
+    width: 45%;
+    height: 250px;
+    background-color: rgba(255, 255, 255,0.2);
+    border-radius: 10px;
+}
+.pic1{background-image: url('../img/Cofee.PNG');
+background-size: cover;
+background-repeat: no-repeat;
 }
