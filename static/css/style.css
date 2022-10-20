@@ -76,11 +76,33 @@ nav{
     color: rgb(0, 217, 255);
     transition-duration: 2s;
 }
-.fa-bars{
-    display: none !important;
+.toggle{
     position: relative;
+}
+.dropdown-content{
+    position: absolute;
+    height: fit-content;
+    height: fit-content;
+    width: 110px;
+    min-width: fit-content;
+    display: none;
+    background-color: black;
+}
+.dropdown-content a{
     color: white;
-    font-size: 2em;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: var(--font);
+    font-weight: 900px;
+    margin:10px 0;
+    padding:0 5px;
+}
+.dropdown-content a:hover{
+    color: rgb(0, 217, 255);
+    transition-duration: 2s;
+}
+#toggle{
+    display: none;
 }
 @media screen and (max-width:991px){
     .nav-content{
@@ -89,6 +111,14 @@ nav{
     .brand{
         text-align: center !important;
     }
+    #toggle{
+        display: block !important;
+        margin-left:20%;
+    }
+    .toggle:hover .dropdown-content{
+        display: block;
+    }
+
 }
 .space{
     width: auto;
@@ -211,6 +241,7 @@ main{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    margin: 20px auto;
 }
 .box3{
     width: 45%;
