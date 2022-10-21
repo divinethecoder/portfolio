@@ -87,6 +87,7 @@ nav{
     min-width: fit-content;
     display: none;
     background-color: black;
+    border-radius: 5px;
 }
 .dropdown-content a{
     color: white;
@@ -122,7 +123,7 @@ nav{
 }
 .space{
     width: auto;
-    height: 130px;
+    height: 100px;
 }
 main{
     width: auto;
@@ -227,7 +228,7 @@ main{
     height: fit-content;
     text-align: center;
 }
-#projects h3{
+#projects h2{
     color: white;
     font-size: 3em;
 }
@@ -238,10 +239,9 @@ main{
 .project-box{
     width: 85%;
     height: fit-content;
-    margin: 0 auto;
+    margin: 100px auto 0;
     display: flex;
     justify-content: space-around;
-    margin: 20px auto;
 }
 .box3{
     width: 45%;
@@ -249,7 +249,54 @@ main{
     background-color: rgba(255, 255, 255,0.2);
     border-radius: 10px;
 }
-.pic1{background-image: url('../img/Cofee.PNG');
-background-size: cover;
-background-repeat: no-repeat;
+.box3 h3{
+    font-size: 1.5em;
+    color: white;
+    margin: 15px auto;
+}
+.box3 p{
+    margin-bottom: 5%;
+}
+.box3 a{
+    padding: 5px 20px;
+    background-color: rgb(0, 217, 255);
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.box3 a:hover{
+    background-color: white;
+    color: rgb(0, 217, 255);
+    transition: 1s;
+}
+.pic1{
+    background-image: url('../img/Cofee.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pic2{
+    background-image: url('../img/Project2.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+.pic3{
+    background-image: url('../img/Divine.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (max-width:991px) {
+    .project-box{
+        flex-wrap: wrap;
+    }
+    .box3{
+        width: 80%;
+        margin-top: 20px;
+        height: 310px;
+    }
+    .reverse{
+        flex-direction:row-reverse !important;
+    }
 }
