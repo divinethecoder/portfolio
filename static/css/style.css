@@ -303,3 +303,77 @@ main{
         margin-top: 20px;
     }
 }
+#contact{
+    width: auto;
+    height: fit-content;
+}
+#contact h2{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+#contact p{
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+.ico{
+    width:80%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 20px;
+}
+.ico a{
+    color: white;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ico a i{
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+    transition-duration:2s ;
+}
+.ico a:hover i{
+    color: rgb(0, 217, 255);
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+}
+button{
+    padding: 1px 5px;
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(0, 217, 255);
+    transition-duration: 1s;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    color: rgb(0, 217, 255);
+    background-color: white;
+}
+footer{
+    width: auto;
+    height: 50px;
+    background-color: black;
+    padding-top: 15px;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width:991px) {
+    .space{
+        height: 30px;
+    }
+    
+}
