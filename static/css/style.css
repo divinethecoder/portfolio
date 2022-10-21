@@ -239,7 +239,7 @@ main{
 .project-box{
     width: 85%;
     height: fit-content;
-    margin: 100px auto 0;
+    margin: 80px auto 0;
     display: flex;
     justify-content: space-around;
 }
@@ -298,5 +298,8 @@ main{
     }
     .fit-content{
         height: fit-content!important;
+    }
+    .project-box{
+        margin-top: 20px;
     }
 }
